@@ -5,7 +5,7 @@ import fetch from "node-fetch";
 const app = express();
 app.use(cors());
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const API_URL = "https://klinycs.center.emartim.com/Publico/Consulta?Identificador=iEPm7rsa64H3PJuXUSJuhahCBjBaBh62UDeP3ZDA6svvcFYCqgGC3AoKhPdmpcgF79CwCqtLdRBPmhFVycHBZaF2YqHpauYCMCBp";
 
